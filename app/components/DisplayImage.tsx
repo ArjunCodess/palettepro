@@ -29,9 +29,7 @@ function DisplayImage({ uploadedImage, colorPalette }: UploadedImageProps) {
         <ul className="flex items-center justify-center flex-wrap gap-4">
           {colorPalette.map((color, index) => {
             const rgb = `rgb(${color[0]}, ${color[1]}, ${color[2]})`;
-            const hex = `#${toHex(color[0])}${toHex(color[1])}${toHex(
-              color[2]
-            )}`;
+            const hex = `#${toHex(color[0])}${toHex(color[1])}${toHex(color[2])}`;
 
             console.log(rgb, hex);
 
