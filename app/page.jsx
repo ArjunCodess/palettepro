@@ -20,7 +20,7 @@ export default function Home() {
       // Wait for image to load
       img.onload = () => {
         const colorThief = new ColorThief();
-        const colorPalette = colorThief.getPalette(img, 6);
+        const colorPalette = colorThief.getPalette(img, 10);
         setUploadedImage(event.target.result);
         setColorPalette(colorPalette);
       };
