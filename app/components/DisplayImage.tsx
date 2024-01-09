@@ -10,7 +10,7 @@ interface UploadedImageProps {
 function DisplayImage({ uploadedImage, colorPalette }: UploadedImageProps) {
   const toHex = (rgb: string | number): string => {
     const hexValue = typeof rgb === "number" ? rgb.toString(16).padStart(2, "0") : rgb;
-    return `#{hexValue}`;
+    return `${hexValue}`;
   };
 
   return (
